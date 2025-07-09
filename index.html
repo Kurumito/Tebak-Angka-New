@@ -103,7 +103,7 @@
 <body>
 
   <audio id="bg-music" loop autoplay>
-    <source src="https://cdn.pixabay.com/download/audio/2022/03/01/audio_1311cd2c3e.mp3?filename=relaxing-chillhop-116199.mp3" type="audio/mp3">
+    <source src="relaxingchillhop.mp3">
   </audio>
 
   <div class="container">
@@ -121,9 +121,9 @@
 
   <button class="dark-btn" onclick="toggleDarkMode()">🌓</button>
 
-  <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_a00825b8ce.mp3?filename=success-1-6297.mp3"></audio>
-  <audio id="failSound" src="https://cdn.pixabay.com/download/audio/2021/11/15/audio_5e29c85a25.mp3?filename=failure-1-89170.mp3"></audio>
-  <audio id="failSound" src="https://cdn.pixabay.com/download/audio/2021/11/15/audio_5e29c85a25.mp3?filename=failure-1-89170.mp3"></audio>
+  <audio id="winSound" src="winsound.mp3"></audio>
+  <audio id="failSound" src="failsound.mp3"></audio>
+  <audio id="failSound" src="failsound.mp3"></audio>
 
   <script>
   let luckyNumber = Math.floor(Math.random() * 10) + 1;
@@ -139,7 +139,7 @@
     const score = document.getElementById("score");
     const winSound = document.getElementById("winSound");
     const failSound = document.getElementById("failSound");
-
+    const relaxingchillhop = document.getElementById("relaxingchillhop");
     if (isNaN(guess) || guess < 1 || guess > 10) {
       message.textContent = "⚠️ Masukkan angka antara 1 sampai 10!";
       return;
@@ -194,7 +194,7 @@
   function getReward() {
     clearTimeout(resetTimeout);
     clearInterval(countdownInterval);
-    window.location.href = "https://link.dana.id/danakaget?c=seupmln6f&r=gY208z&orderId=20250705101214738315010300166374130293787"; // ganti linkmu
+    window.location.href = "https://link.dana.id/danakaget?c=stm2kzxem&r=gY208z&orderId=20250709101214948815010300166374130856988"; // ganti linkmu
   }
 
   function toggleDarkMode() {
